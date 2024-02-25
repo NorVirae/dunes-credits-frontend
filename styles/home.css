@@ -1,0 +1,46 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.home h1 {
+    background-clip: text;
+    text-align: center;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+    background-image: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    flex: 1;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.home__inner {
+    height: 100vh;
+}
+
+.home__inner main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
